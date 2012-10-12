@@ -23,7 +23,8 @@ then
    echo "Can't change to $LOG_DIR"
    exit $E_XCD
 fi
-tail -$LINES messages > mesg.temp
+tail -n$lines messages > mesg.temp
+rm messages
 mv mesg.temp  messages
 cat /dev/null > wtmp
 echo "Log cleaned up."
