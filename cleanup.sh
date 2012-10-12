@@ -11,7 +11,7 @@ then
    echo "Must be root to run this script."
    exit "$E_NOTROOT"
 fi
-if [ -n "$1"]
+if [ -n "$1" ]
 then
   lines=$1
 else
