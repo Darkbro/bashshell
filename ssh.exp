@@ -1,0 +1,8 @@
+#!/usr/bin/expect 
+ set PASS {lindex argv1}
+ 
+ spawn ssh root@172.18.0.235
+ expect \"*password:\"
+ send \"Abcd1234\r\"
+ send \"mkdir -p teste\r\"
+ expect eof
