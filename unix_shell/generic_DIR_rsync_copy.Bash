@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -x
+set -x
 MACHINE_LIST="fred"
 DIR_LIST_FILE="rsync_directory_list.lst"
 WORK_DIR=/usr/local/bin
